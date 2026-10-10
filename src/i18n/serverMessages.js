@@ -1,0 +1,73 @@
+// The API answers in English. When the website is in Tamil these messages are shown in Tamil instead,
+// so error text never mixes languages. Unknown messages fall back to a generic Tamil sentence.
+const TA = {
+  'Please sign in to continue.': 'தொடர உள்நுழையவும்.',
+  'Administrator access is required.': 'நிர்வாகி அணுகல் தேவை.',
+  'An account with this email already exists. Please sign in instead.': 'இந்த மின்னஞ்சலுடன் ஏற்கனவே கணக்கு உள்ளது. உள்நுழையவும்.',
+  'Incorrect email or password.': 'மின்னஞ்சல் அல்லது கடவுச்சொல் தவறு.',
+  'Incorrect admin email or password.': 'நிர்வாகி மின்னஞ்சல் அல்லது கடவுச்சொல் தவறு.',
+  'Please enter your email and password.': 'உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லை உள்ளிடவும்.',
+  'Please enter the admin email and password.': 'நிர்வாகி மின்னஞ்சல் மற்றும் கடவுச்சொல்லை உள்ளிடவும்.',
+  'Please fill in your name, email and password.': 'உங்கள் பெயர், மின்னஞ்சல் மற்றும் கடவுச்சொல்லை நிரப்பவும்.',
+  'Password must be at least 6 characters.': 'கடவுச்சொல் குறைந்தது 6 எழுத்துகள் இருக்க வேண்டும்.',
+  'New password must be at least 6 characters.': 'புதிய கடவுச்சொல் குறைந்தது 6 எழுத்துகள் இருக்க வேண்டும்.',
+  'Please enter a valid email address.': 'சரியான மின்னஞ்சல் முகவரியை உள்ளிடவும்.',
+  'Current password is incorrect.': 'தற்போதைய கடவுச்சொல் தவறு.',
+  'Google could not verify this sign-in. Please try again.': 'Google இந்த உள்நுழைவைச் சரிபார்க்க இயலவில்லை. மீண்டும் முயலுங்கள்.',
+  'Google sign-in failed. Please try again.': 'Google உள்நுழைவு தோல்வியடைந்தது. மீண்டும் முயலுங்கள்.',
+  'Google sign-in is not set up on this server (missing GOOGLE_CLIENT_ID).': 'இந்த சேவையகத்தில் Google உள்நுழைவு அமைக்கப்படவில்லை (GOOGLE_CLIENT_ID இல்லை).',
+  'This Google account could not be verified.': 'இந்த Google கணக்கைச் சரிபார்க்க முடியவில்லை.',
+  'This Google sign-in was not issued for Rasoi.': 'இந்த Google உள்நுழைவு ரசோய்க்காக வழங்கப்படவில்லை.',
+  'If an account exists for this email, a 6-digit code has been sent.': 'இந்த மின்னஞ்சலுக்குக் கணக்கு இருந்தால் 6 இலக்கக் குறியீடு அனுப்பப்பட்டுள்ளது.',
+  'This code has expired. Please request a new one.': 'இந்தக் குறியீடு காலாவதியானது. புதியதைக் கோரவும்.',
+  'Too many attempts. Please request a new code.': 'அதிக முயற்சிகள். புதிய குறியீட்டைக் கோரவும்.',
+  'Please fill in all required delivery details.': 'தேவையான டெலிவரி விவரங்கள் அனைத்தையும் நிரப்பவும்.',
+  'Please enter a valid 10-digit phone number.': 'சரியான 10 இலக்க தொலைபேசி எண்ணை உள்ளிடவும்.',
+  'Please enter a valid PIN code.': 'சரியான அஞ்சல் குறியீட்டை உள்ளிடவும்.',
+  'Please enter a valid UPI ID, e.g. name@bank.': 'சரியான UPI ஐடியை உள்ளிடவும், எ.கா. name@bank.',
+  'Please choose Cash on delivery or UPI.': 'ரொக்கம் அல்லது UPI ஐத் தேர்ந்தெடுக்கவும்.',
+  'Please complete the payment to place this order.': 'ஆர்டர் செய்ய கட்டணத்தை முடிக்கவும்.',
+  'Online payment is available with UPI only.': 'ஆன்லைன் கட்டணம் UPI மூலம் மட்டுமே.',
+  'Waiting for approval in your UPI app.': 'உங்கள் UPI செயலியில் அங்கீகாரத்திற்காகக் காத்திருக்கிறது.',
+  'This coupon code is not valid.': 'இந்த கூப்பன் குறியீடு செல்லுபடியாகாது.',
+  'Your cart is empty.': 'உங்கள் கூடை காலியாக உள்ளது.',
+  'One of the items in your cart is not available.': 'உங்கள் கூடையில் உள்ள ஒரு உணவு இப்போது கிடைக்கவில்லை.',
+  'Order not found.': 'ஆர்டர் கிடைக்கவில்லை.',
+  'Payment not found.': 'கட்டணம் கிடைக்கவில்லை.',
+  'This order was cancelled.': 'இந்த ஆர்டர் ரத்து செய்யப்பட்டது.',
+  'This order is already out for delivery and cannot be cancelled.': 'இந்த ஆர்டர் ஏற்கனவே டெலிவரிக்கு புறப்பட்டுவிட்டதால் ரத்து செய்ய இயலாது.',
+  'You can review an order after it has been delivered.': 'டெலிவரி ஆன பிறகே ஆர்டரை மதிப்பிட முடியும்.',
+  'You have already reviewed this order. Thank you!': 'இந்த ஆர்டரை ஏற்கனவே மதிப்பிட்டுவிட்டீர்கள். நன்றி!',
+  'Please choose a star rating from 1 to 5.': '1 முதல் 5 வரை நட்சத்திர மதிப்பீட்டைத் தேர்ந்தெடுக்கவும்.',
+  'Delivery rating must be from 1 to 5 stars.': 'டெலிவரி மதிப்பீடு 1 முதல் 5 நட்சத்திரங்கள் வரை இருக்க வேண்டும்.',
+  'Dish not found.': 'உணவு கிடைக்கவில்லை.',
+  'Chef not found.': 'சமையல்காரர் கிடைக்கவில்லை.',
+  'User not found.': 'பயனர் கிடைக்கவில்லை.',
+  'Not found.': 'கிடைக்கவில்லை.',
+  'Unknown item.': 'தெரியாத பொருள்.',
+  'Cannot reach the server. Make sure the backend is running (cd backend && npm start).': 'சேவையகத்தைத் தொடர்பு கொள்ள முடியவில்லை. பின்தளம் இயங்குகிறதா என்று பாருங்கள்.',
+  'Something went wrong. Please try again.': 'ஏதோ தவறு நடந்தது. மீண்டும் முயலுங்கள்.',
+  'You cannot delete your own administrator account.': 'உங்கள் சொந்த நிர்வாகி கணக்கை நீக்க முடியாது.',
+  'There must always be at least one administrator.': 'குறைந்தது ஒரு நிர்வாகி எப்போதும் இருக்க வேண்டும்.',
+  'This chef still has dishes. Move or delete those dishes first.': 'இந்த சமையல்காரருக்கு இன்னும் உணவுகள் உள்ளன. முதலில் அவற்றை மாற்றவும் அல்லது நீக்கவும்.',
+  'A delivered order cannot be cancelled.': 'டெலிவரி ஆன ஆர்டரை ரத்து செய்ய முடியாது.',
+  'An order can only move forward.': 'ஆர்டரை முன்னோக்கி மட்டுமே நகர்த்த முடியும்.',
+  'Dish name is required.': 'உணவின் பெயர் தேவை.',
+  'Chef name is required.': 'சமையல்காரர் பெயர் தேவை.',
+  'Partner name is required.': 'பங்குதாரர் பெயர் தேவை.',
+  'Name cannot be empty.': 'பெயர் காலியாக இருக்கக் கூடாது.',
+  'This payment request expired. Please try again.': 'இந்தக் கட்டணக் கோரிக்கை காலாவதியானது. மீண்டும் முயலுங்கள்.',
+  'Prices changed while you were paying. Nothing was charged — please try again.': 'நீங்கள் செலுத்தும்போது விலைகள் மாறின. கட்டணம் எடுக்கப்படவில்லை — மீண்டும் முயலுங்கள்.',
+  'You cancelled this payment.': 'நீங்கள் இந்தக் கட்டணத்தை ரத்து செய்தீர்கள்.'
+};
+const PATTERNS = [
+  [/^The payment was declined in (.+)\.$/, (m) => `${m[1]} இல் கட்டணம் நிராகரிக்கப்பட்டது.`],
+  [/^Please wait (\d+)s before asking for another code\.$/, (m) => `மற்றொரு குறியீட்டைக் கோர ${m[1]} வினாடிகள் காத்திருக்கவும்.`],
+  [/^That code is not correct\. (\d+) tries left\.$/, (m) => `அந்தக் குறியீடு தவறு. இன்னும் ${m[1]} முயற்சிகள் உள்ளன.`]
+];
+export const translateServerMessage = (message, language) => {
+  if (language !== 'ta' || !message) return message;
+  if (TA[message]) return TA[message];
+  for (const [re, fn] of PATTERNS) { const m = message.match(re); if (m) return fn(m); }
+  return /[\u0B80-\u0BFF]/.test(message) ? message : 'ஏதோ தவறு நடந்தது. மீண்டும் முயலுங்கள்.';
+};
