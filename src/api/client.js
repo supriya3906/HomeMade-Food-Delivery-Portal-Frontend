@@ -2,7 +2,8 @@
 // error responses into Error objects carrying the server's message.
 import { translateServerMessage } from '../i18n/serverMessages';
 
-const BASE = import.meta.env.VITE_API_URL || '/api';
+const rawBase = (import.meta.env.VITE_API_URL || '/api').trim().replace(/\/+$/, '');
+const BASE = rawBase === '/api' || rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
 const TOKEN_KEY = 'hmf_token';
 
 export const getToken = () => {
